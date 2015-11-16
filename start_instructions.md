@@ -60,12 +60,21 @@ Create an `index.html` file. Add any frameworks you want to include into your `c
 
 The Commandments:
 1. Thou Shalt Commit Frequently And Write Meaningful Commit Messages
+
 2. Thou Shalt Push Frequently
+
 3. Thou Shalt Make A Branch For Each Story
+
 4. Thou Shalt Only Work On A Single Story At A Time
+
 5. Thou Shalt Merge Branches Only After A Review
+
 6. Thou Shalt Only Do Work In A Feature Branch
+
 7. Thou Shalt Only Do Work In A Feature Branch That Is Related To The Feature
+
 8. Thou Shalt Not Use WrapBootstrap.com Or Other Prewritten Code Instead Of Creating Your Own
+
 9. Thou Shalt Push Thyself, But Not Beat Thyself Up
+
 10. Thou Shalt Keep Thine README.md Up To Date
