@@ -1,3 +1,20 @@
-body {
-	
+.isoitem {
+	position: relative;
+}
+
+h3 { 
+   position: absolute; 
+   bottom: 10px; 
+   left: 3px; 
+   width: 100%; 
+}
+h3 span { 
+	color: white; 
+	letter-spacing: -1px;
+	background: rgb(0, 0, 0); /* fallback color */
+	background: rgba(0, 0, 0, 0.5);
+	padding: 0px;
+}
+h3 span.spacer {
+   padding:0 2px;
 }

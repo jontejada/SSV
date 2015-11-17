@@ -1,0 +1,52 @@
+{
+	"photos":[
+		{
+			"src":"001.jpg",
+			"stone":["qf"],
+			"color":["sed"]
+		},
+		{
+			"src":"002.jpg",
+			"stone":["as","cl"],
+			"color":["mes"]
+		},
+		{
+			"src":"003.jpg",
+			"stone":["ss"],
+			"color":["gc","wal"]
+		},
+		{
+			"src":"004.jpg",
+			"stone":["sl"],
+			"color":["gc"]
+		},
+		{
+			"src":"005.jpg",
+			"stone":["fs"],
+			"color":["sf"]
+		}
+	],
+	"abbr":{
+		"as":"Ashlarstone",
+		"cs":"Castlestone",
+		"cl":"Chiseled Limestone",
+		"fs":"Fieldstone",
+		"qf":"Quick Fit",
+		"rs":"Riverstone",
+		"rb":"Rustic Brick",
+		"sl":"Split Ledgestone",
+		"ss":"Stackstone",
+		"tl":"Tumbled Ledgestone",
+		"asp":"Aspen",
+		"baj":"Baja",
+		"iro":"Ironwood",
+		"mes":"Mesquite",
+		"pre":"Prescott",
+		"sed":"Sedona",
+		"san":"Santa Fe",
+		"wal":"Walnut"
+	}
+}
+
+
+
