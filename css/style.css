@@ -1,5 +1,6 @@
 .isoitem {
 	position: relative;
+   float:left;
 }
 
 h4 { 
@@ -21,3 +22,9 @@ h4 span {
 h3 span.spacer {
    padding:0 2px;
 }*/
+
+
+
+figcaption {
+   display: none;
+}

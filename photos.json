@@ -1,29 +1,49 @@
 {
 	"photos":[
 		{
-			"src":"001.jpg",
+			"src":"001",
 			"stone":["qf"],
-			"color":["sed"]
+			"color":["sed"],
+			"thumb_width":"264",
+			"thumb_height":"264",
+			"full_width":"800",
+			"full_height":"800"
 		},
 		{
-			"src":"002.jpg",
+			"src":"002",
 			"stone":["as","cl"],
-			"color":["mes"]
+			"color":["mes"],
+			"thumb_width":"264",
+			"thumb_height":"264",
+			"full_width":"800",
+			"full_height":"800"
 		},
 		{
-			"src":"003.jpg",
+			"src":"003",
 			"stone":["ss"],
-			"color":["gra","wal"]
+			"color":["gra","wal"],
+			"thumb_width":"264",
+			"thumb_height":"264",
+			"full_width":"800",
+			"full_height":"800"
 		},
 		{
-			"src":"004.jpg",
+			"src":"004",
 			"stone":["sl"],
-			"color":["gra"]
+			"color":["gra"],
+			"thumb_width":"264",
+			"thumb_height":"264",
+			"full_width":"800",
+			"full_height":"800"
 		},
 		{
-			"src":"005.jpg",
+			"src":"005",
 			"stone":["fs"],
-			"color":["san"]
+			"color":["san"],
+			"thumb_width":"264",
+			"thumb_height":"264",
+			"full_width":"800",
+			"full_height":"800"
 		}
 	],
 	"abbr":{
