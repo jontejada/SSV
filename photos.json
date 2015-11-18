@@ -13,17 +13,17 @@
 		{
 			"src":"003.jpg",
 			"stone":["ss"],
-			"color":["gc","wal"]
+			"color":["gra","wal"]
 		},
 		{
 			"src":"004.jpg",
 			"stone":["sl"],
-			"color":["gc"]
+			"color":["gra"]
 		},
 		{
 			"src":"005.jpg",
 			"stone":["fs"],
-			"color":["sf"]
+			"color":["san"]
 		}
 	],
 	"abbr":{
@@ -39,6 +39,7 @@
 		"tl":"Tumbled Ledgestone",
 		"asp":"Aspen",
 		"baj":"Baja",
+		"gra":"Grand Canyon",
 		"iro":"Ironwood",
 		"mes":"Mesquite",
 		"pre":"Prescott",
