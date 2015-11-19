@@ -2,14 +2,23 @@
 <html>
 <head>
 	<title>Sedona Stone Veneer</title>
-	<link rel='stylesheet' href='css/style.css'>
+	<!-- bootstrap css --><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- my css --><link rel='stylesheet' href='css/style.css'>
 </head>
 <body>
-	<div>
-		<h1>Hello World</h1>
+	<div class='container-fluid'>
+		<div id='filters' class='row button-group'>
+			<button class='button btn' data-filter='*'>show all</button>
+			<button class='button btn' data-filter='.qf'>QF</button>
+			<button class='button btn' data-filter='.gra'>GC</button>
+		</div>
+		<div class='isotope row'>
+			<!-- content goes here -->
+		</div>
 	</div>
-
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js' charset='utf-8'></script>
-    <script src='js/script.js'></script>
+	<!-- jquery js --><script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js' charset='utf-8'></script>
+	<!-- bootstap js --><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- isotope --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.js"></script>
+    <!-- my js --><script src='js/script.js'></script>
 </body>
 </html>

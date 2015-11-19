@@ -1,3 +1,31 @@
-body {
-	
+.isoitem {
+	position: relative;
+   float:left;
 }
+
+h4 { 
+   position: absolute; 
+   top: 0; 
+   left: 10px; 
+   width: 100%; 
+   color:white;
+   text-shadow: 0 0 6px black;
+}
+
+/*
+h4 span { 
+	color: white; 
+	letter-spacing: -1px;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.2);
+}
+h3 span.spacer {
+   padding:0 2px;
+}*/
+
+
+
+figcaption {
+   display: none;
+}
+

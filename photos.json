@@ -1,0 +1,73 @@
+{
+	"photos":[
+		{
+			"src":"001",
+			"stone":["qf"],
+			"color":["sed"],
+			"thumb_width":"264",
+			"thumb_height":"264",
+			"full_width":"800",
+			"full_height":"800"
+		},
+		{
+			"src":"002",
+			"stone":["as","cl"],
+			"color":["mes"],
+			"thumb_width":"264",
+			"thumb_height":"264",
+			"full_width":"800",
+			"full_height":"800"
+		},
+		{
+			"src":"003",
+			"stone":["ss"],
+			"color":["gra","wal"],
+			"thumb_width":"264",
+			"thumb_height":"264",
+			"full_width":"800",
+			"full_height":"800"
+		},
+		{
+			"src":"004",
+			"stone":["sl"],
+			"color":["gra"],
+			"thumb_width":"264",
+			"thumb_height":"264",
+			"full_width":"800",
+			"full_height":"800"
+		},
+		{
+			"src":"005",
+			"stone":["fs"],
+			"color":["san"],
+			"thumb_width":"264",
+			"thumb_height":"264",
+			"full_width":"800",
+			"full_height":"800"
+		}
+	],
+	"abbr":{
+		"as":"Ashlarstone",
+		"cs":"Castlestone",
+		"cl":"Chiseled Limestone",
+		"fs":"Fieldstone",
+		"qf":"Quick Fit",
+		"rs":"Riverstone",
+		"rb":"Rustic Brick",
+		"sl":"Split Ledgestone",
+		"ss":"Stackstone",
+		"tl":"Tumbled Ledgestone",
+		"asp":"Aspen",
+		"baj":"Baja",
+		"gra":"Grand Canyon",
+		"iro":"Ironwood",
+		"mes":"Mesquite",
+		"pre":"Prescott",
+		"sed":"Sedona",
+		"san":"Santa Fe",
+		"wal":"Walnut"
+	}
+}
+
+
+
