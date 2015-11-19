@@ -15,8 +15,8 @@
 			"color":["mes"],
 			"thumb_width":"264",
 			"thumb_height":"264",
-			"full_width":"800",
-			"full_height":"800"
+			"full_width":"900",
+			"full_height":"600"
 		},
 		{
 			"src":"003",
@@ -40,6 +40,15 @@
 			"src":"005",
 			"stone":["fs"],
 			"color":["san"],
+			"thumb_width":"264",
+			"thumb_height":"264",
+			"full_width":"800",
+			"full_height":"800"
+		},
+		{
+			"src":"006",
+			"stone":["qf"],
+			"color":["iro"],
 			"thumb_width":"264",
 			"thumb_height":"264",
 			"full_width":"800",
