@@ -1,3 +1,7 @@
+body {
+   background-color: black;
+}
+
 .isoitem {
 	position: relative;
    float:left;
@@ -12,7 +16,6 @@ h4 {
    text-shadow: 0 0 6px black;
 }
 
-/*
 h4 span { 
 	color: white; 
 	letter-spacing: -1px;
@@ -21,11 +24,13 @@ h4 span {
 }
 h3 span.spacer {
    padding:0 2px;
-}*/
-
+}
 
 
 figcaption {
    display: none;
 }
 
+#filters {
+   padding:10px;
+}

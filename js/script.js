@@ -165,7 +165,7 @@
 	    	classes += ' ' + val;
 	    });
 	    //combine all info to make a figure html element 
-	   	var html = "<figure id='" + divId + "' class='" + classes + "'><a href='" + fullSrc + "' type='image/jpeg' data-size='" + obj.full_width + "x" + obj.full_height + "'><img src='"+ imgSrc + "' width='" + obj.thumb_width + "' height='" + obj.thumb_height + "'><h4>" + stoneString + "<br>" + colorString + "</h4></a><figcaption>Stone: " + stoneString + ". Color: " + colorString + "</figcaption></figure>";
+	   	var html = "<figure id='" + divId + "' class='" + classes + "'><a href='" + fullSrc + "' type='image/jpeg' data-size='" + obj.full_width + "x" + obj.full_height + "'><img class='img-' src='"+ imgSrc + "' width='" + obj.thumb_width + "' height='" + obj.thumb_height + "'><h4>" + stoneString + "<br>" + colorString + "</h4></a><figcaption>Stone: " + stoneString + ". Color: " + colorString + "</figcaption></figure>";
 	   	$('.isotope').append(html); //append the new figure element to the isotope div
 	}
 
