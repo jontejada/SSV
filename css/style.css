@@ -5,6 +5,7 @@ body {
 .isoitem {
 	position: relative;
    float:left;
+   padding:2px;
 }
 
 h4 { 
@@ -14,9 +15,10 @@ h4 {
    width: 100%; 
    color:white;
    text-shadow: 0 0 6px black;
+   font-size: 90%;
 }
 
-h4 span { 
+/*h4 span { 
 	color: white; 
 	letter-spacing: -1px;
 	background: rgb(0, 0, 0);
@@ -24,9 +26,9 @@ h4 span {
 }
 h3 span.spacer {
    padding:0 2px;
-}
+}`
 
-
+*/
 figcaption {
    display: none;
 }
@@ -34,3 +36,14 @@ figcaption {
 #filters {
    padding:10px;
 }
+
+.stamp {
+/*   text-align: center;
+*/   position: absolute;
+/*   background: orange;
+*/   left: 0;
+   top: 0;
+/*   width: 240px;
+   height: 600px;*/
+}
+

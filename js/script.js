@@ -17,12 +17,13 @@
 			var thumbElements = $(el).children(':not(.isotope-hidden)').get(); //is .get() necessary?
 			var items = [];
 			var figureEl, linkEl, size, item;
-			for (var i = 0 ; i < thumbElements.length ; i++) {
+			for (var i = 1 ; i < thumbElements.length ; i++) {
 				figureEl = thumbElements[i];
 				if (figureEl.nodeType !== 1) {
 					continue;
 				}
 				linkEl = figureEl.children[0];
+				console.log(figureEl);
 				size = linkEl.getAttribute('data-size').split('x');
 				item = {
 					src: linkEl.getAttribute('href'),
@@ -38,7 +39,7 @@
 			}
 			return items;
 		}
-		//find nearest parent (why?)
+		//find nearest parent
 		function closest(el, fn) {
         	return el && ( fn(el) ? el : closest(el.parentNode, fn) );
     	}
@@ -55,14 +56,13 @@
 	        if(!clickedListItem) {
 	            return;
 	        }
-	        console.log(clickedListItem);
 	        // find index of clicked item by looping through all child nodes
 	        var clickedGallery = clickedListItem.parentNode,
 	            childNodes = $(clickedListItem.parentNode).children(':not(.isotope-hidden)').get(),
 	            numChildNodes = childNodes.length,
 	            nodeIndex = 0,
 	            index;
-	            console.log(childNodes);
+	            //console.log(childNodes);
 	        for (var i = 0; i < numChildNodes; i++) {
 	            if(childNodes[i].nodeType !== 1) { 
 	                continue; 
@@ -121,12 +121,15 @@
 	    	itemSelector: '.isoitem', //isotope items are figure elements w/ isoitem class 
 	    	layoutMode: 'masonry',
 	    	getSortData: {},
+	    	stamp: '.stamp'
 	    	//transitionDuration: '0.4s'
 	    });
 	    
-	    $('#filters').on('mouseover', 'button', function() {
+	    $('#filters').on('mouseover', 'button', function() { // mouseover or click
 	    	container.isotope({filter:$(this).attr('data-filter')});
-	    });
+	    	//$('button').css('font-weight','normal');
+	    	//$(this).css('font-weight','bold');
+		    });
 	    $('.button-group').each( function( i, buttonGroup ) {
 	    	var $buttonGroup = $( buttonGroup );
 	    	$buttonGroup.on( 'mouseover', 'button', function() {
