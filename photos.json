@@ -4,8 +4,7 @@
 			"src":"001",
 			"stone":["as","cl"],
 			"color":["iro"],
-			"thumb_width":"120",
-			"thumb_height":"120",
+			"aspect":"2x2",
 			"full_width":"1200",
 			"full_height":"900"
 		},
@@ -13,8 +12,7 @@
 			"src":"002",
 			"stone":["sl"],
 			"color":["gra","wal"],
-			"thumb_width":"120",
-			"thumb_height":"120",
+			"aspect":"2x1",
 			"full_width":"1200",
 			"full_height":"900"
 		},
@@ -22,8 +20,7 @@
 			"src":"003",
 			"stone":["fs"],
 			"color":["pre","asp"],
-			"thumb_width":"120",
-			"thumb_height":"120",
+			"aspect":"1x1",
 			"full_width":"945",
 			"full_height":"785"
 		},
@@ -31,8 +28,7 @@
 			"src":"004",
 			"stone":["fs"],
 			"color":["pre","asp"],
-			"thumb_width":"120",
-			"thumb_height":"120",
+			"aspect":"2x1",
 			"full_width":"1094",
 			"full_height":"821"
 		},
@@ -40,8 +36,7 @@
 			"src":"005",
 			"stone":["as"],
 			"color":["gra"],
-			"thumb_width":"120",
-			"thumb_height":"120",
+			"aspect":"1x2",
 			"full_width":"1094",
 			"full_height":"821"
 		},
@@ -49,8 +44,7 @@
 			"src":"006",
 			"stone":["as"],
 			"color":["iro","wal"],
-			"thumb_width":"120",
-			"thumb_height":"120",
+			"aspect":"1x1",
 			"full_width":"1168",
 			"full_height":"900"
 		},
@@ -58,8 +52,7 @@
 			"src":"007",
 			"stone":["as","cl"],
 			"color":["iro"],
-			"thumb_width":"120",
-			"thumb_height":"120",
+			"aspect":"2x2",
 			"full_width":"1168",
 			"full_height":"900"
 		},
@@ -67,8 +60,7 @@
 			"src":"008",
 			"stone":["fs"],
 			"color":["custom"],
-			"thumb_width":"120",
-			"thumb_height":"120",
+			"aspect":"2x2",
 			"full_width":"1168",
 			"full_height":"900"
 		},
@@ -76,8 +68,7 @@
 			"src":"009",
 			"stone":["qf"],
 			"color":["gra","iro","wal","baj"],
-			"thumb_width":"120",
-			"thumb_height":"120",
+			"aspect":"1x1",
 			"full_width":"1168",
 			"full_height":"900"
 		},
@@ -85,8 +76,7 @@
 			"src":"010",
 			"stone":["as","cl"],
 			"color":["wal"],
-			"thumb_width":"120",
-			"thumb_height":"120",
+			"aspect":"1x1",
 			"full_width":"1168",
 			"full_height":"900"
 		},
@@ -94,8 +84,7 @@
 			"src":"011",
 			"stone":["sl"],
 			"color":["custom"],
-			"thumb_width":"120",
-			"thumb_height":"120",
+			"aspect":"1x1",
 			"full_width":"1168",
 			"full_height":"900"
 		},
@@ -103,117 +92,656 @@
 			"src":"012",
 			"stone":["qf"],
 			"color":["wal"],
-			"thumb_width":"120",
-			"thumb_height":"120",
+			"aspect":"2x2",
 			"full_width":"1168",
 			"full_height":"900"
 		},
 		{
 			"src":"013",
-			"stone":["as"],
-			"color":["mes","wal"],
-			"thumb_width":"120",
-			"thumb_height":"120",
-			"full_width":"1168",
+			"stone":["qf"],
+			"color":["wal"],
+			"aspect":"1x1",
+			"full_width":"1200",
 			"full_height":"900"
 		},
 		{
 			"src":"014",
-			"stone":["as"],
-			"color":["mes","wal"],
-			"thumb_width":"120",
-			"thumb_height":"120",
+			"stone":["fs"],
+			"color":["pre"],
+			"aspect":"1x2",
 			"full_width":"1168",
 			"full_height":"900"
 		},
 		{
 			"src":"015",
-			"stone":["qf"],
-			"color":["wal"],
-			"thumb_width":"120",
-			"thumb_height":"120",
-			"full_width":"1168",
-			"full_height":"900"
+			"stone":["as"],
+			"color":["iro"],
+			"aspect":"1x2",
+			"full_width":"990",
+			"full_height":"700"
 		},
 		{
 			"src":"016",
-			"stone":["as"],
-			"color":["gra"],
-			"thumb_width":"120",
-			"thumb_height":"120",
-			"full_width":"1168",
-			"full_height":"900"
+			"stone":["sl"],
+			"color":["wal","gra"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
 		},
 		{
 			"src":"017",
-			"stone":["fs"],
-			"color":["pre"],
-			"thumb_width":"120",
-			"thumb_height":"120",
-			"full_width":"1168",
-			"full_height":"900"
+			"stone":["qf"],
+			"color":["custom"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
 		},
 		{
 			"src":"018",
-			"stone":["as"],
-			"color":["iro"],
-			"thumb_width":"120",
-			"thumb_height":"120",
-			"full_width":"1168",
-			"full_height":"900"
+			"stone":["rb"],
+			"color":["custom"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
 		},
 		{
 			"src":"019",
-			"stone":["sl"],
-			"color":["wal","gra"],
-			"thumb_width":"120",
-			"thumb_height":"120",
-			"full_width":"1168",
-			"full_height":"900"
+			"stone":["as","cl"],
+			"color":["custom","wal"],
+			"aspect":"2x2",
+			"full_width":"990",
+			"full_height":"700"
 		},
 		{
 			"src":"020",
 			"stone":["qf"],
-			"color":["custom"],
-			"thumb_width":"120",
-			"thumb_height":"120",
-			"full_width":"1168",
-			"full_height":"900"
+			"color":["wal"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
 		},
 		{
 			"src":"021",
-			"stone":["rb"],
-			"color":["custom"],
-			"thumb_width":"120",
-			"thumb_height":"120",
-			"full_width":"1168",
-			"full_height":"900"
+			"stone":["qf"],
+			"color":["iro"],
+			"aspect":"2x1",
+			"full_width":"990",
+			"full_height":"700"
 		},
 		{
 			"src":"022",
-			"stone":["as","cl"],
-			"color":["wal"],
-			"thumb_width":"120",
-			"thumb_height":"120",
-			"full_width":"1168",
-			"full_height":"900"
+			"stone":["qf"],
+			"color":["iro"],
+			"aspect":"1x2",
+			"full_width":"990",
+			"full_height":"700"
 		},
 		{
 			"src":"023",
-			"stone":["cs"],
-			"color":["wal"],
-			"thumb_width":"120",
-			"thumb_height":"120",
-			"full_width":"1168",
-			"full_height":"900"
+			"stone":["ss"],
+			"color":["custom"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
 		},
 		{
 			"src":"024",
 			"stone":["qf"],
+			"color":["iro"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"025",
+			"stone":["ss"],
+			"color":["baj","mes"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"026",
+			"stone":["qf"],
+			"color":["wal"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"027",
+			"stone":["sl"],
+			"color":["wal","gra"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"028",
+			"stone":["tl"],
+			"color":["wal"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"029",
+			"stone":["qf"],
+			"color":["wal"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"030",
+			"stone":["qf"],
+			"color":["wal"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"031",
+			"stone":["qf"],
+			"color":["wal","san"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"032",
+			"stone":["qf"],
+			"color":["sed"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"033",
+			"stone":["sl"],
+			"color":["wal","gra"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"034",
+			"stone":["fs"],
+			"color":["pre"],
+			"aspect":"2x2",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"035",
+			"stone":["sl"],
+			"color":["wal"],
+			"aspect":"1x2",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"036",
+			"stone":["fs"],
+			"color":["pre"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"037",
+			"stone":["fs"],
+			"color":["pre"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"038",
+			"stone":["ss"],
+			"color":["pre"],
+			"aspect":"2x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"039",
+			"stone":["ss"],
+			"color":["pre"],
+			"aspect":"2x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"040",
+			"stone":["ss"],
+			"color":["pre"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"041",
+			"stone":["qf"],
+			"color":["wal"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"042",
+			"stone":["qf"],
+			"color":["wal"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"043",
+			"stone":["qf"],
+			"color":["wal"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"044",
+			"stone":["qf"],
+			"color":["wal"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"045",
+			"stone":["qf"],
+			"color":["wal"],
+			"aspect":"2x2",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"046",
+			"stone":["fs"],
+			"color":["pre"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"047",
+			"stone":["qf"],
 			"color":["gra"],
-			"thumb_width":"120",
-			"thumb_height":"120",
-			"full_width":"1168",
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"048",
+			"stone":["qf"],
+			"color":["gra"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"049",
+			"stone":["qf"],
+			"color":["gra"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"050",
+			"stone":["qf"],
+			"color":["wal"],
+			"aspect":"2x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"051",
+			"stone":["sl"],
+			"color":["pre"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"052",
+			"stone":["qf"],
+			"color":["wal"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"053",
+			"stone":["qf"],
+			"color":["gra"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"054",
+			"stone":["fs"],
+			"color":["san"],
+			"aspect":"2x2",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"055",
+			"stone":["qf"],
+			"color":["wal"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"056",
+			"stone":["fs"],
+			"color":["pre"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"057",
+			"stone":["qf"],
+			"color":["gra"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"058",
+			"stone":["qf"],
+			"color":["gra"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"059",
+			"stone":["qf"],
+			"color":["wal"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"060",
+			"stone":["qf"],
+			"color":["wal"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"061",
+			"stone":["sl"],
+			"color":["wal","gra"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"062",
+			"stone":["qf"],
+			"color":["iro"],
+			"aspect":"2x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"063",
+			"stone":["qf"],
+			"color":["gra"],
+			"aspect":"2x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"064",
+			"stone":["ss"],
+			"color":["gra"],
+			"aspect":"2x2",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"065",
+			"stone":["qf"],
+			"color":["pre"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"066",
+			"stone":["sl"],
+			"color":["wal","gra"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"067",
+			"stone":["sl"],
+			"color":["wal"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"068",
+			"stone":["qf"],
+			"color":["wal","gra","mes"],
+			"aspect":"2x2",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"069",
+			"stone":["fs"],
+			"color":["pre"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"070",
+			"stone":["qf"],
+			"color":["wal","baj"],
+			"aspect":"2x2",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"071",
+			"stone":["as"],
+			"color":["wal","gra"],
+			"aspect":"2x2",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"072",
+			"stone":["qf"],
+			"color":["wal"],
+			"aspect":"1x1",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"073",
+			"stone":["qf"],
+			"color":["wal"],
+			"aspect":"2x2",
+			"full_width":"990",
+			"full_height":"700"
+		},
+		{
+			"src":"074",
+			"stone":["cs"],
+			"color":["wal"],
+			"aspect":"1x1",
+			"full_width":"1200",
+			"full_height":"900"
+		},
+		{
+			"src":"075",
+			"stone":["qf"],
+			"color":["gra"],
+			"aspect":"1x1",
+			"full_width":"1200",
+			"full_height":"900"
+		},
+		{
+			"src":"076",
+			"stone":["qf"],
+			"color":["asp"],
+			"aspect":"1x1",
+			"full_width":"518",
+			"full_height":"900"
+		},
+		{
+			"src":"077",
+			"stone":["qf"],
+			"color":["iro"],
+			"aspect":"1x1",
+			"full_width":"1200",
+			"full_height":"587"
+		},
+		{
+			"src":"078",
+			"stone":["fs"],
+			"color":["pre","iro"],
+			"aspect":"2x2",
+			"full_width":"1200",
+			"full_height":"900"
+		},
+		{
+			"src":"079",
+			"stone":["fs"],
+			"color":["gra"],
+			"aspect":"1x1",
+			"full_width":"1200",
+			"full_height":"900"
+		},
+		{
+			"src":"080",
+			"stone":["fs"],
+			"color":["gra"],
+			"aspect":"1x1",
+			"full_width":"1200",
+			"full_height":"839"
+		},
+		{
+			"src":"081",
+			"stone":["qf"],
+			"color":["wal","gra"],
+			"aspect":"1x1",
+			"full_width":"1200",
+			"full_height":"900"
+		},
+		{
+			"src":"082",
+			"stone":["fs"],
+			"color":["pre","baj"],
+			"aspect":"2x2",
+			"full_width":"1200",
+			"full_height":"832"
+		},
+		{
+			"src":"083",
+			"stone":["qf"],
+			"color":["wal"],
+			"aspect":"2x2",
+			"full_width":"1300",
+			"full_height":"703"
+		},
+		{
+			"src":"084",
+			"stone":["sl"],
+			"color":["wal"],
+			"aspect":"1x1",
+			"full_width":"1400",
+			"full_height":"715"
+		},
+		{
+			"src":"085",
+			"stone":["as"],
+			"color":["mes","baj"],
+			"aspect":"1x1",
+			"full_width":"1200",
+			"full_height":"732"
+		},
+		{
+			"src":"086",
+			"stone":["sl"],
+			"color":["gra"],
+			"aspect":"2x1",
+			"full_width":"1200",
+			"full_height":"717"
+		},
+		{
+			"src":"087",
+			"stone":["cl"],
+			"color":["custom","wal"],
+			"aspect":"1x1",
+			"full_width":"1200",
+			"full_height":"639"
+		},
+		{
+			"src":"088",
+			"stone":["qf"],
+			"color":["custom"],
+			"aspect":"1x1",
+			"full_width":"1200",
+			"full_height":"900"
+		},
+		{
+			"src":"089",
+			"stone":["fs"],
+			"color":["san"],
+			"aspect":"1x1",
+			"full_width":"1200",
+			"full_height":"900"
+		},
+		{
+			"src":"090",
+			"stone":["as"],
+			"color":["gra"],
+			"aspect":"1x1",
+			"full_width":"1200",
+			"full_height":"900"
+		},
+		{
+			"src":"091",
+			"stone":["as"],
+			"color":["mes","wal"],
+			"aspect":"1x1",
+			"full_width":"1200",
+			"full_height":"900"
+		},
+		{
+			"src":"092",
+			"stone":["as"],
+			"color":["mes","wal"],
+			"aspect":"1x1",
+			"full_width":"1200",
+			"full_height":"900"
+		},
+		{
+			"src":"093",
+			"stone":["fs"],
+			"color":["pre"],
+			"aspect":"1x1",
+			"full_width":"1200",
 			"full_height":"900"
 		}
 	],
@@ -240,6 +768,3 @@
 		"custom":"Custom"
 	}
 }
-
-
-

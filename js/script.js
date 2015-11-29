@@ -8,6 +8,7 @@
         
         	initIso();
         	initPhotoswipe();
+        	initHoverTitles();
     });
 
 	//intialize Photoswipe
@@ -23,7 +24,7 @@
 					continue;
 				}
 				linkEl = figureEl.children[0];
-				console.log(figureEl);
+				//console.log(figureEl);
 				size = linkEl.getAttribute('data-size').split('x');
 				item = {
 					src: linkEl.getAttribute('href'),
@@ -60,7 +61,7 @@
 	        var clickedGallery = clickedListItem.parentNode,
 	            childNodes = $(clickedListItem.parentNode).children(':not(.isotope-hidden)').get(),
 	            numChildNodes = childNodes.length,
-	            nodeIndex = 0,
+	            //nodeIndex = 0,
 	            index;
 	            //console.log(childNodes);
 	        for (var i = 0; i < numChildNodes; i++) {
@@ -68,10 +69,11 @@
 	                continue; 
 	            }
 	            if(childNodes[i] === clickedListItem) {
-	                index = nodeIndex;
+	                index = i-1; //why minus 1 now?
+	                console.log(i);
 	                break;
 	            }
-	            nodeIndex++;
+	            //nodeIndex++;
 	        }	
 	        if(index >= 0) {
 	            openPhotoSwipe( index, clickedGallery );
@@ -120,11 +122,15 @@
 	    container.isotope({ 
 	    	itemSelector: '.isoitem', //isotope items are figure elements w/ isoitem class 
 	    	layoutMode: 'masonry',
+	    	masonry: {
+	    		columnWidth: 120
+	    	},
 	    	getSortData: {},
-	    	stamp: '.stamp'
+	    	stamp: '.stamp',
 	    	//transitionDuration: '0.4s'
 	    });
 	    
+
 	    $('#filters').on('mouseover', 'button', function() { // mouseover or click
 	    	container.isotope({filter:$(this).attr('data-filter')});
 	    	//$('button').css('font-weight','normal');
@@ -142,7 +148,8 @@
 	//generate html for a figure element & append it to the isotope div element
 	function makeFig(index, obj) { //get the index number of the array and the object with photo info
 	    var divId = 'pic' + index; //crete a unique HTML id for the div, based on index value
-	    var imgSrc = 'img/thumb/' + obj.src + '.jpg'; //create the thumbnail url 
+	    var aspect = obj.aspect;
+	    var imgSrc = 'img/' + aspect +'/' + obj.src + '.jpg'; //create the thumbnail url 
 	    var fullSrc = 'img/full/' + obj.src + '.jpg'; //create the full image url
 	    var stoneString = '';
 	    $.each(obj.stone, function(key, val) { //build stoneString 
@@ -167,9 +174,29 @@
 	    $.each(obj.color, function(key, val) {
 	    	classes += ' ' + val;
 	    });
+	    var thumb_width, thumb_height;
+	    if (aspect[0] === '1') {
+	    	thumb_width = '120';
+	    } else if (aspect[0] === '2') {
+	    	thumb_width = '240';
+	    }
+	    if (aspect[2] === '1') {
+	    	thumb_height = '120';
+	    } else if (aspect[2] === '2') {
+	    	thumb_height = '240';
+	    }
 	    //combine all info to make a figure html element 
-	   	var html = "<figure id='" + divId + "' class='" + classes + "'><a href='" + fullSrc + "' type='image/jpeg' data-size='" + obj.full_width + "x" + obj.full_height + "'><img class='img-' src='"+ imgSrc + "' width='" + obj.thumb_width + "' height='" + obj.thumb_height + "'><h4>" + stoneString + "<br>" + colorString + "</h4></a><figcaption>Stone: " + stoneString + ". Color: " + colorString + "</figcaption></figure>";
+	   	var html = "<figure id='" + divId + "' class='" + classes + "'><a href='" + fullSrc + "' type='image/jpeg' data-size='" + obj.full_width + "x" + obj.full_height + "'><img class='img-' src='"+ imgSrc + "' width='" + thumb_width + "' height='" + thumb_height + "'><h4>" + stoneString + "<br>" + colorString + "</h4></a><figcaption>Stone: " + stoneString + ". Color: " + colorString + "</figcaption></figure>";
 	   	$('.isotope').append(html); //append the new figure element to the isotope div
+	}
+
+	function initHoverTitles() {
+		$('figure').hover(function(){
+			$(this).find('h4').css("display","inline");
+		},
+		function(){
+			$(this).find('h4').css("display","none");
+		});
 	}
 
 })();
