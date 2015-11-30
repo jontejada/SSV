@@ -1,15 +1,141 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Sedona Stone Veneer</title>
-	<link rel='stylesheet' href='css/style.css'>
-</head>
-<body>
-	<div>
-		<h1>Hello World</h1>
-	</div>
 
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js' charset='utf-8'></script>
+<head>
+    <title>Sedona Stone Veneer</title>
+    <!-- photoswipe style -->
+    <link rel="stylesheet" id="photoswipe-style-css" href="photoswipe/photoswipe.css" type="text/css">
+    <!-- photoswipe skin-->
+    <link rel="stylesheet" id="photoswipe-skin-css" href="photoswipe/default-skin/default-skin.css" type="text/css">
+    <!-- bootstrap css -->
+<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+ -->    <!-- OR LOCAL bootstrap css -->
+    <link rel="stylesheet" href="local/bootstrap.min.css">
+    <!-- my css -->
+    <link rel='stylesheet' href='css/style.css'>
+</head>
+
+<body>
+    <div class='container-fluid'>
+<!--         <div class='row btn-toolbar' id='newfilters'>
+            <div class='btn-group'>
+                <button class='main button btn'>Stone Style</button>
+                <button class='toggle button btn' data-filter='.asp'>Aspen</button>
+                <button class='toggle button btn' data-filter='.baj'>Baja</button>
+                <button class='toggle button btn' data-filter='.gra'>Grand Canyon</button>
+                <button class='toggle button btn' data-filter='.iro'>Ironwood</button>
+                <button class='toggle button btn' data-filter='.mes'>Mesquite</button>
+                <button class='toggle button btn' data-filter='.pre'>Prescott</button>
+                <button class='toggle button btn' data-filter='.sed'>Sedona</button>
+                <button class='toggle button btn' data-filter='.san'>Santa Fe</button>
+                <button class='toggle button btn' data-filter='.wal'>Walnut</button>
+            </div>
+            <div class='btn-group'>
+                <button class='btn'>Show All</button>
+            </div>
+        </div> -->
+        <div class='row'>
+        <div class='isotope col-md-10'>
+<!--             <div class='isoitem logo'>
+                <h1>SEDONA<br>STONE<br>VENEER</h1>
+            </div>
+ -->            
+
+            <!-- content goes here -->
+        </div>
+        <div class='stamp col-md-2'>
+                <div id='filters'>
+                    <div class='btn-group-vertical btn-block' role='group' data-filter-group='color'>
+                        <button class='main1 button btn btn-primary btn-lg' data-filter='*'>Stone Styles</button>
+                        <button class='toggle1 button btn btn-default btn-lg' data-filter='.asp'>Aspen</button>
+                        <button class='toggle1 button btn btn-default btn-lg' data-filter='.baj'>Baja</button>
+                        <button class='toggle1 button btn btn-default btn-lg' data-filter='.gra'>Grand Canyon</button>
+                        <button class='toggle1 button btn btn-default btn-lg' data-filter='.iro'>Ironwood</button>
+                        <button class='toggle1 button btn btn-default btn-lg' data-filter='.mes'>Mesquite</button>
+                        <button class='toggle1 button btn btn-default btn-lg' data-filter='.pre'>Prescott</button>
+                        <button class='toggle1 button btn btn-default btn-lg' data-filter='.sed'>Sedona</button>
+                        <button class='toggle1 button btn btn-default btn-lg' data-filter='.san'>Santa Fe</button>
+                        <button class='toggle1 button btn btn-default btn-lg' data-filter='.wal'>Walnut</button>
+                    </div>
+                    <br>
+                    <div class='btn-group-vertical btn-block' role='group' data-filter-group='stone'>
+                        <button class='main2 button btn btn-primary btn-lg' data-filter='*'>Color Scheme</button>
+                        <button class='toggle2 button btn btn-default btn-lg' data-filter='.as'>Ashlarstone</button>
+                        <button class='toggle2 button btn btn-default btn-lg' data-filter='.cs'>Castlestone</button>
+                        <button class='toggle2 button btn btn-default btn-lg' data-filter='.cl'>Chiseled Lime</button>
+                        <button class='toggle2 button btn btn-default btn-lg' data-filter='.fs'>Fieldstone</button>
+                        <button class='toggle2 button btn btn-default btn-lg' data-filter='.qf'>Quick Fit</button>
+                        <button class='toggle2 button btn btn-default btn-lg' data-filter='.rs'>Riverstone</button>
+                        <button class='toggle2 button btn btn-default btn-lg' data-filter='.rb'>Rustic Brick</button>
+                        <button class='toggle2 button btn btn-default btn-lg' data-filter='.sl'>Split Ledgestone</button>
+                        <button class='toggle2 button btn btn-default btn-lg' data-filter='.ss'>Stackstone</button>
+                        <button class='toggle2 button btn btn-default btn-lg' data-filter='.tl'>Tumbled Ledge</button>
+                    </div>
+                    <br>
+                    <div class='btn-group-vertical btn-block'>
+                    <button class='button btn btn-primary btn-lg' data-filter='*'>Show All</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- PhotoSwipe -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+<!--                     <button class="pswp__button pswp__button--star" title="Star"></button>
+ -->                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jquery js -->
+    <!--<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js' charset='utf-8'></script>-->
+    <!--or local jquery-->
+    <script src='local/jquery.js' charset='utf-8'></script>
+    <!-- bootstap js -->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+    <!-- or local bootstap js -->
+    <script src="local/bootstrap.min.js"></script>
+    <!-- isotope js -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.js"></script>-->
+    <!-- or local isotope js -->
+    <script src="local/isotope.pkgd.js"></script>
+    <!-- photoswipe ui js -->
+    <script type="text/javascript" src="photoswipe/photoswipe-ui-default.min.js"></script>
+    <!-- photoswipe js -->
+    <script type="text/javascript" src="photoswipe/photoswipe.js"></script>
+    <!-- imagesloaded js -->
+    <!--<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>-->
+    <!-- my js -->
     <script src='js/script.js'></script>
 </body>
+
 </html>
