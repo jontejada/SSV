@@ -1,5 +1,5 @@
 body {
-   background-color: rgb(33,30,25);
+   background-color: rgb(204, 195, 180);
 }
 
 .isoitem {
@@ -12,10 +12,13 @@ img {
 }
 
 h1 {
-   color:white;
+   color:black;
    line-height: 85%;
-   border:4px solid white;
-   padding:4px;
+   border:6px solid black;
+   padding:8px;
+   font-weight: bolder;
+   font-size: 320%;
+   margin:10px;
 }
 
 h4 { 
@@ -34,27 +37,18 @@ figcaption {
 }
 
 #filters {
-   padding:10px;
+   padding:0;
 }
 
-#newfilters{
-   padding:10px;
-}
-
-.toggle{
-   display:none;
+.button {
+   border:none;
 }
 
 .stamp {
-/*   text-align: center;
-*/   position: absolute;
-/*   background: orange;
-*/   right: 0;
+   position: absolute;
+   right: 0;
    top: 0;
-/*   width: 240px;
-   height: 600px;*/
 }
-
 
 .btn-group-vertical {
    margin-top: 10px;

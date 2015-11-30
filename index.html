@@ -17,7 +17,7 @@
 
 <body>
     <div class='container-fluid'>
-        <div class='row btn-toolbar' id='newfilters'>
+<!--         <div class='row btn-toolbar' id='newfilters'>
             <div class='btn-group'>
                 <button class='main button btn'>Stone Style</button>
                 <button class='toggle button btn' data-filter='.asp'>Aspen</button>
@@ -33,43 +33,50 @@
             <div class='btn-group'>
                 <button class='btn'>Show All</button>
             </div>
-        </div>
-        <div class='isotope row'>
+        </div> -->
+        <div class='row'>
+        <div class='isotope col-md-10'>
 <!--             <div class='isoitem logo'>
                 <h1>SEDONA<br>STONE<br>VENEER</h1>
             </div>
- -->            <div class='stamp'>
+ -->            
+
+            <!-- content goes here -->
+        </div>
+        <div class='stamp col-md-2'>
                 <div id='filters'>
-                    <button class='button btn btn-primary' data-filter='*'>Show All</button>
-                    <br>
-                    <div class='btn-group-vertical' role='group' data-filter-group='color'>
-                        <button class='button btn' data-filter='.asp'>Aspen</button>
-                        <button class='button btn' data-filter='.baj'>Baja</button>
-                        <button class='button btn' data-filter='.gra'>Grand Canyon</button>
-                        <button class='button btn' data-filter='.iro'>Ironwood</button>
-                        <button class='button btn' data-filter='.mes'>Mesquite</button>
-                        <button class='button btn' data-filter='.pre'>Prescott</button>
-                        <button class='button btn' data-filter='.sed'>Sedona</button>
-                        <button class='button btn' data-filter='.san'>Santa Fe</button>
-                        <button class='button btn' data-filter='.wal'>Walnut</button>
+                    <div class='btn-group-vertical btn-block' role='group' data-filter-group='color'>
+                        <button class='main1 button btn btn-primary btn-lg' data-filter='*'>Stone Styles</button>
+                        <button class='toggle1 button btn btn-default btn-lg' data-filter='.asp'>Aspen</button>
+                        <button class='toggle1 button btn btn-default btn-lg' data-filter='.baj'>Baja</button>
+                        <button class='toggle1 button btn btn-default btn-lg' data-filter='.gra'>Grand Canyon</button>
+                        <button class='toggle1 button btn btn-default btn-lg' data-filter='.iro'>Ironwood</button>
+                        <button class='toggle1 button btn btn-default btn-lg' data-filter='.mes'>Mesquite</button>
+                        <button class='toggle1 button btn btn-default btn-lg' data-filter='.pre'>Prescott</button>
+                        <button class='toggle1 button btn btn-default btn-lg' data-filter='.sed'>Sedona</button>
+                        <button class='toggle1 button btn btn-default btn-lg' data-filter='.san'>Santa Fe</button>
+                        <button class='toggle1 button btn btn-default btn-lg' data-filter='.wal'>Walnut</button>
                     </div>
                     <br>
-                    <div class='btn-group-vertical' role='group' data-filter-group='stone'>
-                        <button class='button btn' data-filter='.as'>Ashlarstone</button>
-                        <button class='button btn' data-filter='.cs'>Castlestone</button>
-                        <button class='button btn' data-filter='.cl'>Chiseled Limestone</button>
-                        <button class='button btn' data-filter='.fs'>Fieldstone</button>
-                        <button class='button btn' data-filter='.qf'>Quick Fit</button>
-                        <button class='button btn' data-filter='.rs'>Riverstone</button>
-                        <button class='button btn' data-filter='.rb'>Rustic Brick</button>
-                        <button class='button btn' data-filter='.sl'>Split Ledgestone</button>
-                        <button class='button btn' data-filter='.ss'>Stackstone</button>
-                        <button class='button btn' data-filter='.tl'>Tumbled Ledgestone</button>
+                    <div class='btn-group-vertical btn-block' role='group' data-filter-group='stone'>
+                        <button class='main2 button btn btn-primary btn-lg' data-filter='*'>Color Scheme</button>
+                        <button class='toggle2 button btn btn-default btn-lg' data-filter='.as'>Ashlarstone</button>
+                        <button class='toggle2 button btn btn-default btn-lg' data-filter='.cs'>Castlestone</button>
+                        <button class='toggle2 button btn btn-default btn-lg' data-filter='.cl'>Chiseled Lime</button>
+                        <button class='toggle2 button btn btn-default btn-lg' data-filter='.fs'>Fieldstone</button>
+                        <button class='toggle2 button btn btn-default btn-lg' data-filter='.qf'>Quick Fit</button>
+                        <button class='toggle2 button btn btn-default btn-lg' data-filter='.rs'>Riverstone</button>
+                        <button class='toggle2 button btn btn-default btn-lg' data-filter='.rb'>Rustic Brick</button>
+                        <button class='toggle2 button btn btn-default btn-lg' data-filter='.sl'>Split Ledgestone</button>
+                        <button class='toggle2 button btn btn-default btn-lg' data-filter='.ss'>Stackstone</button>
+                        <button class='toggle2 button btn btn-default btn-lg' data-filter='.tl'>Tumbled Ledge</button>
+                    </div>
+                    <br>
+                    <div class='btn-group-vertical btn-block'>
+                    <button class='button btn btn-primary btn-lg' data-filter='*'>Show All</button>
                     </div>
                 </div>
             </div>
-            <!-- content goes here -->
-        </div>
     </div>
     <!-- PhotoSwipe -->
     <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">

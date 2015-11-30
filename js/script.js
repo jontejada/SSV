@@ -6,6 +6,7 @@
         abbr = data.abbr; //load abbreviations from json into abbr variable
         $.each(data.photos, makeFig); //for each photo in the array, run the makeFig function
         
+        	slidingFilters();
         	initIso();
         	initPhotoswipe();
         	initHoverTitles();
@@ -15,10 +16,10 @@
 	function initPhotoswipe() {
 		//parse thumbs
 		function parseThumbElements(el) {
-			var thumbElements = $(el).children(':not(.isotope-hidden)').get(); //is .get() necessary?
+			var thumbElements = $(el).children(':not(.isotope-hidden,.logo)').get(); //is .get() necessary?
 			var items = [];
 			var figureEl, linkEl, size, item;
-			for (var i = 1 ; i < thumbElements.length ; i++) {
+			for (var i = 0 ; i < thumbElements.length ; i++) {
 				figureEl = thumbElements[i];
 				if (figureEl.nodeType !== 1) {
 					continue;
@@ -63,14 +64,17 @@
 	            numChildNodes = childNodes.length,
 	            //nodeIndex = 0,
 	            index;
-	            //console.log(childNodes);
+	            // console.log(clickedGallery);
+	            // console.log(childNodes);
+	            // console.log(numChildNodes);
 	        for (var i = 0; i < numChildNodes; i++) {
+	        	//console.log(childNodes[i].nodeType);
 	            if(childNodes[i].nodeType !== 1) { 
 	                continue; 
 	            }
 	            if(childNodes[i] === clickedListItem) {
-	                index = i-1; //why minus 1 now?
-	                console.log(i);
+	                index = i; //why minus 1 now?
+	                //console.log(i);
 	                break;
 	            }
 	            //nodeIndex++;
@@ -89,7 +93,7 @@
 				history:false};
 			var items = parseThumbElements(galleryElement);
 			//options.index = parseInt(index, 10);
-	        console.log(options);
+	        //console.log(options);
 			var gallery = new PhotoSwipe(pswpElement , PhotoSwipeUI_Default , items , options);
 			gallery.init();
 		}
@@ -133,8 +137,9 @@
 
 	    $('#filters').on('mouseover', 'button', function() { // mouseover or click
 	    	container.isotope({filter:$(this).attr('data-filter')});
-	    	//$('button').css('font-weight','normal');
-	    	//$(this).css('font-weight','bold');
+	    	$('button').css('font-weight','normal');
+	    	$(this).css('font-weight','bold');
+	    	//$(this).css('background-color','#ccc'); //narrow rule to members of .btn-default, add rule to reset all others to white/default/inherit
 		    });
 	    $('.button-group').each( function( i, buttonGroup ) {
 	    	var $buttonGroup = $( buttonGroup );
@@ -147,6 +152,15 @@
 
 	//generate html for a figure element & append it to the isotope div element
 	function makeFig(index, obj) { //get the index number of the array and the object with photo info
+		//debugger;
+		var logoLocation = 7
+		if (index === logoLocation) {
+			var logo = "<div class='isoitem logo'><h1>SEDONA<br>STONE<br>VENEER</h1></div>";
+			$('.isotope').append(logo);
+		}
+		if (index > logoLocation) {
+			index = index -1;
+		}
 	    var divId = 'pic' + index; //crete a unique HTML id for the div, based on index value
 	    var aspect = obj.aspect;
 	    var imgSrc = 'img/' + aspect +'/' + obj.src + '.jpg'; //create the thumbnail url 
@@ -197,6 +211,20 @@
 		function(){
 			$(this).find('h4').css("display","none");
 		});
+	}
+
+	function slidingFilters() {
+		$('.toggle1').slideToggle('slow');
+		$('.toggle2').slideToggle('slow');
+		$('.main1').mouseover(function(){
+			$('.toggle1').slideDown('slow');
+			$('.toggle2').slideUp('slow');
+		});
+		$('.main2').mouseover(function(){
+			$('.toggle2').slideDown('slow');
+			$('.toggle1').slideUp('slow');
+		});
+		//$('.isotope').isotope
 	}
 
 })();
