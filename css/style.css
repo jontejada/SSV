@@ -1,31 +1,55 @@
+body {
+   background-color: rgb(200,178,153);
+}
+
 .isoitem {
 	position: relative;
    float:left;
 }
 
+img {
+   padding:3px;
+}
+
+h1 {
+   color:black;
+   line-height: 85%;
+   border:6px solid black;
+   padding:8px;
+   font-weight: bolder;
+   font-size: 320%;
+   margin:10px;
+}
+
 h4 { 
    position: absolute; 
-   top: 0; 
+   bottom: 0; 
    left: 10px; 
    width: 100%; 
    color:white;
-   text-shadow: 0 0 6px black;
+   text-shadow: 0 0 12px black, 0 0 6px black, 0 0 2px black;
+   font-size: 90%;
+   display: none;
 }
-
-/*
-h4 span { 
-	color: white; 
-	letter-spacing: -1px;
-	background: rgb(0, 0, 0);
-	background: rgba(0, 0, 0, 0.2);
-}
-h3 span.spacer {
-   padding:0 2px;
-}*/
-
-
 
 figcaption {
    display: none;
 }
 
+#filters {
+   padding:0;
+}
+
+.button {
+   border:none;
+}
+
+.stamp {
+   position: absolute;
+   right: 0;
+   top: 0;
+}
+
+.btn-group-vertical {
+   margin-top: 10px;
+}
